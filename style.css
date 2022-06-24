@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ccc;
+}
+.header{
+    height: 50px;
+    background-color: #c4c9ab;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+.slider {
+    flex: 1; /* PARA SLIDES MENORES - comente aqui e addicione width e height desejadas */
+    overflow: hidden;
+}
+.slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+.slider--item{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+}
+.slider--controls{
+    position:absolute;
+    z-index: 99;
+    width: 100%; /* PARA SLIDES MENORES - comente aqui */ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.slider--control {
+    width:50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.slider--control img{
+    width: 100%;
+}
+a {
+    color:rgb(56, 106, 7);
+    font-size: 20px;
+    text-decoration: none;
+}
+h1{
+    font-size: 20px;
+    color:chartreuse;
+    text-align: center;
+}
